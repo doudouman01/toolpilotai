@@ -1,222 +1,28 @@
-export interface Post {
-  slug: string;
-  title: string;
-  description: string;
-  category: string;
-  categorySlug: string;
-  date: string;
-  readTime: string;
-  content: string;
-  affiliate?: { name: string; url: string; cta: string }[];
+/**
+ * add-articles.js - Adds 15 new articles to ToolPilotAI
+ * Run from toolpilotai project root
+ */
+const fs = require("fs");
+const path = require("path");
+
+const POSTS_FILE = path.join(__dirname, "src", "content", "posts.ts");
+
+if (!fs.existsSync(POSTS_FILE)) {
+  console.log("ERROR: posts.ts not found"); process.exit(1);
 }
 
-export const categories = [
-  { name: "Reviews", slug: "reviews", color: "#3b82f6", description: "In-depth reviews of the most popular AI tools and platforms." },
-  { name: "Comparisons", slug: "comparisons", color: "#8b5cf6", description: "Side-by-side comparisons to help you choose the right tool." },
-  { name: "How-To", slug: "how-to", color: "#10b981", description: "Step-by-step guides to get the most out of AI tools." },
-  { name: "Best Of", slug: "best-of", color: "#f59e0b", description: "Curated lists of the best AI tools for every use case." },
-  { name: "Productivity", slug: "productivity", color: "#ef4444", description: "Tips and strategies to supercharge your workflow with AI." },
-];
+const NEW_ARTICLES = [
 
-export const posts: Post[] = [
-  {
-    slug: "claude-review-2026",
-    title: "Claude AI Review 2026: The Best AI for Writing and Code?",
-    description: "An honest, hands-on review of Claude by Anthropic. We test writing, coding, analysis, and creative tasks to see if it lives up to the hype.",
-    category: "Reviews",
-    categorySlug: "reviews",
-    date: "September 5, 2026",
-    readTime: "8 min read",
-    content: `
-<p>Claude by Anthropic has quickly become one of the most talked-about AI assistants in 2026. But does it actually deliver? After months of daily use across writing, coding, research, and creative work, here is our honest assessment.</p>
-
-<h2>What Is Claude?</h2>
-<p>Claude is a large language model (LLM) built by Anthropic, a San Francisco-based AI safety company. It comes in several tiers: the free version, Claude Pro ($20/month), and Claude Team/Enterprise plans. The current flagship models are Claude Opus 4.6 and the newer Claude Sonnet 5.</p>
-
-<h2>Writing Quality</h2>
-<p>This is where Claude genuinely shines. Compared to other AI assistants, Claude produces text that reads more naturally, with better paragraph flow and fewer of those telltale "AI-sounding" phrases. It handles long-form content exceptionally well — blog posts, articles, reports, even fiction.</p>
-<p>Claude also follows instructions with remarkable precision. If you ask for a 1,500-word article with three H2 sections and a conclusion, that is exactly what you get. It rarely over-explains or pads content the way some competitors do.</p>
-
-<h2>Coding Capabilities</h2>
-<p>Claude is arguably the best AI for code generation in 2026. It handles JavaScript, TypeScript, Python, React, and Next.js with near-expert proficiency. The Artifacts feature lets you see rendered code output directly in the chat — a game-changer for rapid prototyping.</p>
-<p>Where Claude particularly excels is understanding context across large codebases. You can paste hundreds of lines of code and ask for modifications, and it tracks variable names, function signatures, and dependencies accurately.</p>
-
-<h2>Research and Analysis</h2>
-<p>With web search enabled, Claude can pull current information, cite sources, and synthesize findings into structured reports. The Deep Research feature goes further, spending 5-10 minutes conducting comprehensive multi-source investigations.</p>
-
-<h2>What Could Be Better</h2>
-<p>Claude's main limitation is message limits on the Pro plan — heavy users can hit them during intensive work sessions. The free tier is quite restricted. Image generation is not available (unlike some competitors), though Claude excels at analyzing images you provide.</p>
-
-<h2>The Verdict</h2>
-<p>For writing and coding, Claude is the best AI assistant available in 2026. If your work involves producing content, building software, or analyzing information, the Pro subscription pays for itself within days. For image generation or casual chatbot use, other options might serve you better.</p>
-
-<div class="rating">
-<strong>Our Rating: 9.2/10</strong><br/>
-Best for: Writers, developers, researchers, content creators<br/>
-Price: Free tier available / Pro at $20/month
-</div>
-`,
-  },
-
-  {
-    slug: "chatgpt-vs-claude-vs-gemini-2026",
-    title: "ChatGPT vs Claude vs Gemini: Which AI Assistant Wins in 2026?",
-    description: "We tested all three leading AI assistants on writing, coding, reasoning, and daily tasks. Here is the definitive comparison for 2026.",
-    category: "Comparisons",
-    categorySlug: "comparisons",
-    date: "September 5, 2026",
-    readTime: "10 min read",
-    content: `
-<p>The three giants of AI — OpenAI's ChatGPT, Anthropic's Claude, and Google's Gemini — are all more capable than ever in 2026. But they are not identical. Each has distinct strengths that make it the better choice depending on your needs. We tested all three head-to-head.</p>
-
-<h2>Writing Quality</h2>
-<p>Claude leads in writing quality. Its output reads most naturally, follows nuanced instructions best, and requires the least editing. ChatGPT is a close second — reliable and versatile, though occasionally verbose. Gemini tends to produce shorter, more factual responses that sometimes lack depth.</p>
-<p><strong>Winner: Claude</strong></p>
-
-<h2>Coding</h2>
-<p>Claude and ChatGPT are neck and neck for coding. Claude's Artifacts feature gives it an edge for web development since you can preview rendered output. ChatGPT's Code Interpreter is better for data analysis and Python scripting. Gemini has improved significantly but still trails in complex code generation.</p>
-<p><strong>Winner: Tie (Claude for web dev, ChatGPT for data science)</strong></p>
-
-<h2>Research and Accuracy</h2>
-<p>Gemini has a natural advantage here — it is built by Google and has the deepest integration with web search. Its citations are generally more accurate and more current. ChatGPT with browsing is solid. Claude's web search is competent but less deeply integrated.</p>
-<p><strong>Winner: Gemini</strong></p>
-
-<h2>Creative Tasks</h2>
-<p>ChatGPT leads for creative work thanks to DALL-E integration for image generation plus strong creative writing. Claude is better for pure creative writing (fiction, scripts, poetry). Gemini offers image generation through Imagen but it feels less polished.</p>
-<p><strong>Winner: ChatGPT (overall creative), Claude (writing only)</strong></p>
-
-<h2>Pricing</h2>
-<p>All three offer free tiers with limitations. Premium plans are $20/month for ChatGPT Plus, $20/month for Claude Pro, and $20/month for Gemini Advanced. The value depends on which features you use most.</p>
-
-<h2>The Bottom Line</h2>
-<p>Choose Claude if writing and coding are your primary tasks. Choose ChatGPT if you need the most versatile all-rounder with image generation. Choose Gemini if research accuracy and Google ecosystem integration matter most.</p>
-
-<p>There is no single "best" AI — the best one is the one that fits your workflow.</p>
-`,
-  },
-
-  {
-    slug: "how-to-use-ai-for-blog-writing",
-    title: "How to Use AI to Write Blog Posts That Actually Rank (2026 Guide)",
-    description: "A practical step-by-step guide to using AI tools like Claude and ChatGPT for SEO blog writing — without sounding like a robot.",
-    category: "How-To",
-    categorySlug: "how-to",
-    date: "September 5, 2026",
-    readTime: "7 min read",
-    content: `
-<p>AI can write a 2,000-word blog post in 30 seconds. But will that post rank in Google? Probably not — at least not without the right approach. Here is a practical, step-by-step workflow for using AI to produce blog content that actually performs in search.</p>
-
-<h2>Step 1: Keyword Research First, AI Second</h2>
-<p>Never start by asking AI "write me a blog post about X." Start with keyword research. Use tools like Ahrefs, SEMrush, or even Google's free Keyword Planner to find keywords with decent search volume and low competition. The keyword drives everything — the title, the structure, the angle.</p>
-
-<h2>Step 2: Create a Detailed Outline</h2>
-<p>Before generating content, write a detailed outline. Include your target keyword, secondary keywords, the H2 sections you want, and any specific points to cover. The more specific your outline, the better the AI output. A vague prompt produces vague content.</p>
-
-<h2>Step 3: Generate Section by Section</h2>
-<p>Do not generate the entire article in one prompt. Work section by section. This gives you more control over depth, tone, and accuracy. For each section, give the AI context about what came before and what comes next.</p>
-
-<h2>Step 4: Add Your Expertise</h2>
-<p>This is the step most people skip, and it is the most important one. Google's E-E-A-T guidelines reward content that shows Experience, Expertise, Authority, and Trust. Add personal anecdotes, specific examples from your work, opinions, and insights that only a human with real experience would know.</p>
-
-<h2>Step 5: Edit Ruthlessly</h2>
-<p>AI tends to over-explain, repeat itself, and use filler phrases. Cut anything that does not add value. Replace generic examples with specific ones. Check facts and statistics — AI can hallucinate data. Read the piece aloud to catch awkward phrasing.</p>
-
-<h2>Step 6: Optimize On-Page SEO</h2>
-<p>Make sure your target keyword appears in the title, first paragraph, at least one H2, and the meta description. Add internal links to related content on your site. Add external links to authoritative sources. Use descriptive alt text for images.</p>
-
-<h2>The Key Principle</h2>
-<p>AI is your first draft machine, not your publisher. The workflow is: AI generates 70% of the raw material, you add 30% of human insight and editing. That combination produces content that is both efficient to create and genuinely useful to readers — which is what Google rewards.</p>
-`,
-  },
-
-  {
-    slug: "best-ai-writing-tools-2026",
-    title: "7 Best AI Writing Tools in 2026 (Tested and Ranked)",
-    description: "We tested the top AI writing tools for content creation, copywriting, and editing. Here are the 7 best options ranked by quality, price, and features.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 5, 2026",
-    readTime: "9 min read",
-    content: `
-<p>The AI writing tool landscape has exploded. Dozens of tools promise to write your content, but most produce generic, unusable output. We tested the top contenders for real content creation work — blog posts, marketing copy, emails, and long-form articles. Here are the 7 that actually deliver.</p>
-
-<h2>1. Claude Pro — Best Overall for Long-Form Content</h2>
-<p>Claude produces the most natural-sounding long-form content of any AI tool. Its ability to maintain tone and structure across 3,000+ word articles is unmatched. The Artifacts feature lets you preview formatted content in real time. At $20/month, it is the best value for serious writers.</p>
-<p><strong>Best for:</strong> Blog posts, articles, reports, fiction<br/><strong>Price:</strong> Free tier / $20/month Pro</p>
-
-<h2>2. ChatGPT Plus — Best All-Rounder</h2>
-<p>ChatGPT is the most versatile AI writing tool. It handles everything from tweets to technical documentation, and the Custom GPTs feature lets you create specialized writing assistants. The browsing capability keeps content current.</p>
-<p><strong>Best for:</strong> General-purpose writing, copywriting, brainstorming<br/><strong>Price:</strong> Free tier / $20/month Plus</p>
-
-<h2>3. Jasper — Best for Marketing Teams</h2>
-<p>Jasper is purpose-built for marketing content. Its brand voice feature ensures consistency across team members, and the campaign workflow tools save time on repetitive marketing tasks. More expensive than general-purpose AI but worth it for marketing-heavy businesses.</p>
-<p><strong>Best for:</strong> Marketing copy, ad copy, social media content<br/><strong>Price:</strong> From $49/month</p>
-
-<h2>4. Copy.ai — Best for Sales Copy</h2>
-<p>Copy.ai specializes in conversion-focused content. Its templates for landing pages, email sequences, and product descriptions are particularly strong. The workflow automation features can generate entire email campaigns from a brief.</p>
-<p><strong>Best for:</strong> Email marketing, landing pages, product descriptions<br/><strong>Price:</strong> Free tier / From $49/month</p>
-
-<h2>5. Writesonic — Best Budget Option</h2>
-<p>Writesonic offers solid AI writing at a lower price point than most competitors. The output quality is a step below Claude or ChatGPT, but for straightforward content like product descriptions and social posts, it gets the job done at a fraction of the cost.</p>
-<p><strong>Best for:</strong> Budget-conscious content creators, e-commerce copy<br/><strong>Price:</strong> Free tier / From $16/month</p>
-
-<h2>6. Grammarly — Best for Editing and Polish</h2>
-<p>Grammarly is not a content generator — it is a content enhancer. Its AI rewriting suggestions, tone adjustments, and clarity improvements turn rough drafts into polished pieces. Every writer should have it regardless of which AI they use for generation.</p>
-<p><strong>Best for:</strong> Editing, proofreading, tone adjustment<br/><strong>Price:</strong> Free tier / $12/month Premium</p>
-
-<h2>7. Notion AI — Best for Integrated Workflows</h2>
-<p>If you already use Notion for project management, Notion AI adds writing capabilities directly into your workspace. It is not the most powerful writer, but the seamless integration with your notes, databases, and docs makes it incredibly convenient.</p>
-<p><strong>Best for:</strong> Notion users, integrated content workflows<br/><strong>Price:</strong> $10/month add-on</p>
-
-<h2>Our Pick</h2>
-<p>For most content creators, Claude Pro offers the best combination of writing quality, features, and price. Use it alongside Grammarly for editing, and you have a professional writing setup for $32/month total.</p>
-`,
-  },
-
-  {
-    slug: "automate-workflow-with-ai-2026",
-    title: "5 Ways to Automate Your Daily Workflow with AI (Save 10+ Hours/Week)",
-    description: "Practical AI automation strategies that actually work in 2026. No hype, just real workflows that save freelancers and entrepreneurs hours every week.",
-    category: "Productivity",
-    categorySlug: "productivity",
-    date: "September 5, 2026",
-    readTime: "6 min read",
-    content: `
-<p>Most AI productivity advice is vague and unhelpful. "Use AI to be more productive" tells you nothing. Here are 5 specific, tested workflows that save real time — with exact tools and prompts.</p>
-
-<h2>1. Email Triage and Drafting (Save 1-2 Hours/Day)</h2>
-<p>Instead of reading and responding to every email individually, batch-process them with AI. Copy your unread emails into Claude or ChatGPT and ask it to categorize them (urgent, needs response, FYI, spam), draft responses for the "needs response" pile, and flag anything time-sensitive.</p>
-<p>The key is doing this in batches — once in the morning, once after lunch. Stop checking email continuously. This alone saves most people 1-2 hours daily.</p>
-
-<h2>2. Meeting Notes to Action Items (Save 30 Min/Meeting)</h2>
-<p>Record your meetings (with consent) using tools like Otter.ai, Fireflies, or even your phone's voice recorder. Upload the transcript to Claude and ask it to extract: key decisions made, action items with owners, deadlines mentioned, and questions left unresolved.</p>
-<p>You go from a 45-minute meeting with vague notes to a clear action list in 2 minutes.</p>
-
-<h2>3. Content Repurposing Pipeline (Save 3-5 Hours/Week)</h2>
-<p>Write one long-form piece (a blog post or newsletter). Then use AI to transform it into: 5 social media posts (LinkedIn, Twitter, Instagram), an email newsletter version, a script for a short video, and a thread format. One piece of content becomes 8-10 pieces across platforms.</p>
-
-<h2>4. Research Synthesis (Save 2-3 Hours/Project)</h2>
-<p>Instead of reading 10 articles and manually extracting insights, use Claude's web search to research a topic, then ask it to synthesize the findings into a structured brief with sources. Review the brief instead of the raw sources. You read 2 pages instead of 40.</p>
-
-<h2>5. Template-Based Document Generation (Save 1 Hour/Document)</h2>
-<p>Create AI templates for documents you produce regularly: proposals, invoices, reports, onboarding docs. Store the template prompt somewhere accessible. When you need a new document, feed the template prompt plus the specific details, and get a finished draft in 30 seconds instead of starting from scratch.</p>
-
-<h2>The Compound Effect</h2>
-<p>Each of these saves 1-5 hours per week individually. Combined, you are looking at 10-15 hours saved weekly — that is nearly two full work days. The time you reclaim goes to the high-value work that actually grows your business.</p>
-
-<p>Start with one workflow this week. Master it. Then add the next one. In a month, your workday looks completely different.</p>
-`,
-  },
-
-  {
-    slug: "best-ai-coding-tools-2026",
-    title: "5 Best AI Coding Tools in 2026 (Tested by a Developer)",
-    description: "We tested the top AI coding assistants for real development work. Cursor, Claude Code, GitHub Copilot, and more — ranked by actual coding performance.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 6, 2026",
-    readTime: "9 min read",
-    content: `
+// ── ARTICLE 6 ──
+{
+slug: "best-ai-coding-tools-2026",
+title: "5 Best AI Coding Tools in 2026 (Tested by a Developer)",
+description: "We tested the top AI coding assistants for real development work. Cursor, Claude Code, GitHub Copilot, and more — ranked by actual coding performance.",
+category: "Best Of",
+categorySlug: "best-of",
+date: "September 6, 2026",
+readTime: "9 min read",
+content: `
 <p>AI coding tools have gone from autocomplete novelties to full-stack development partners. In 2026, the best ones can build entire features from a description, debug complex issues, and refactor codebases — saving developers hours every day. We tested the top five for real-world projects.</p>
 
 <h2>1. Cursor — Best Overall AI IDE</h2>
@@ -246,18 +52,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>Our Recommendation</h2>
 <p>For most developers, start with Cursor. Its combination of familiar VS Code interface, powerful AI features, and reasonable pricing makes it the easiest way to dramatically boost your productivity. Add Claude Code for complex tasks that need autonomous execution, and you have a complete AI-powered development workflow.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "perplexity-ai-review-2026",
-    title: "Perplexity AI Review 2026: The Best AI Search Engine?",
-    description: "An honest review of Perplexity AI after months of daily use. How it compares to Google, ChatGPT, and traditional search for research and fact-checking.",
-    category: "Reviews",
-    categorySlug: "reviews",
-    date: "September 6, 2026",
-    readTime: "7 min read",
-    content: `
+// ── ARTICLE 7 ──
+{
+slug: "perplexity-ai-review-2026",
+title: "Perplexity AI Review 2026: The Best AI Search Engine?",
+description: "An honest review of Perplexity AI after months of daily use. How it compares to Google, ChatGPT, and traditional search for research and fact-checking.",
+category: "Reviews",
+categorySlug: "reviews",
+date: "September 6, 2026",
+readTime: "7 min read",
+content: `
 <p>Perplexity AI has carved out a unique position in the AI landscape: it is not a chatbot, it is an answer engine. While ChatGPT and Claude generate responses from training data, Perplexity searches the web in real time and synthesizes answers with inline citations. After months of daily use, here is our honest assessment.</p>
 
 <h2>What Makes Perplexity Different</h2>
@@ -278,18 +85,19 @@ Price: Free tier available / Pro at $20/month
 <p>Perplexity is the best AI tool for research and fact-checking in 2026. It does one thing and does it exceptionally well. If you regularly need to find accurate, sourced information quickly, the Pro subscription is worth every penny. Just do not expect it to replace your writing or coding AI — that is not what it is built for.</p>
 
 <div class="rating"><strong>Our Rating: 8.8/10</strong><br/>Best for: Research, fact-checking, academic work, journalism<br/>Price: Free tier / Pro $20/month</div>
-`,
-  },
+`
+},
 
-  {
-    slug: "best-ai-image-generators-2026",
-    title: "Best AI Image Generators in 2026: Midjourney, DALL-E, Flux Compared",
-    description: "We tested the top AI image generators for quality, style control, and ease of use. Here are the best options for designers, marketers, and creators.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 8 ──
+{
+slug: "best-ai-image-generators-2026",
+title: "Best AI Image Generators in 2026: Midjourney, DALL-E, Flux Compared",
+description: "We tested the top AI image generators for quality, style control, and ease of use. Here are the best options for designers, marketers, and creators.",
+category: "Best Of",
+categorySlug: "best-of",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>AI image generation has matured dramatically. The days of distorted hands and melted faces are largely over. In 2026, the top generators produce photorealistic images, consistent characters, and publication-ready artwork. Here are the best options.</p>
 
 <h2>1. Midjourney V7 — Best Image Quality Overall</h2>
@@ -315,18 +123,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>Which Should You Choose?</h2>
 <p>For professional design work, start with Midjourney. For quick, conversational image creation, use DALL-E through ChatGPT. For high-volume or custom needs, explore Flux. For product photos, try Imagen. For anything with text, use Ideogram.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "claude-vs-chatgpt-for-coding-2026",
-    title: "Claude vs ChatGPT for Coding: Which AI Is Better for Developers?",
-    description: "We tested Claude and ChatGPT head-to-head on real coding tasks — debugging, full-stack development, refactoring, and code review. Here is our honest comparison.",
-    category: "Comparisons",
-    categorySlug: "comparisons",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 9 ──
+{
+slug: "claude-vs-chatgpt-for-coding-2026",
+title: "Claude vs ChatGPT for Coding: Which AI Is Better for Developers?",
+description: "We tested Claude and ChatGPT head-to-head on real coding tasks — debugging, full-stack development, refactoring, and code review. Here is our honest comparison.",
+category: "Comparisons",
+categorySlug: "comparisons",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>For developers choosing between Claude and ChatGPT, coding ability is often the deciding factor. We tested both on real development tasks — not toy examples — to see which one actually produces better, more reliable code in 2026.</p>
 
 <h2>Code Generation Quality</h2>
@@ -355,18 +164,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>The Bottom Line</h2>
 <p>For web development, TypeScript/JavaScript, complex debugging, and working with large codebases, Claude is the better choice. For data science, Python scripting, and quick prototyping across many languages, ChatGPT has the edge. Many professional developers use both — Claude as the primary coding partner and ChatGPT for data tasks and quick lookups.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "best-free-ai-tools-2026",
-    title: "12 Best Free AI Tools in 2026 (No Credit Card Required)",
-    description: "The best AI tools you can use completely free — no trials, no credit card. Covers writing, coding, images, research, and productivity.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 6, 2026",
-    readTime: "10 min read",
-    content: `
+// ── ARTICLE 10 ──
+{
+slug: "best-free-ai-tools-2026",
+title: "12 Best Free AI Tools in 2026 (No Credit Card Required)",
+description: "The best AI tools you can use completely free — no trials, no credit card. Covers writing, coding, images, research, and productivity.",
+category: "Best Of",
+categorySlug: "best-of",
+date: "September 6, 2026",
+readTime: "10 min read",
+content: `
 <p>You do not need to spend $20/month to use powerful AI tools. The free tiers in 2026 are genuinely useful — not crippled demos designed to force upgrades. Here are 12 AI tools that deliver real value at zero cost.</p>
 
 <h2>Writing and Chat</h2>
@@ -412,18 +222,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>The Key Takeaway</h2>
 <p>In 2026, you can build a complete AI workflow entirely on free tools: ChatGPT or Claude for writing and coding, Copilot for IDE assistance, Ideogram for images, Perplexity for research, and NotebookLM for document analysis. The paid tiers add convenience and volume, but the free tools are genuinely capable.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "how-to-use-perplexity-ai-for-research",
-    title: "How to Use Perplexity AI for Research (Complete Guide)",
-    description: "A practical guide to using Perplexity AI for academic research, market research, fact-checking, and competitive analysis. Pro tips and advanced techniques.",
-    category: "How-To",
-    categorySlug: "how-to",
-    date: "September 6, 2026",
-    readTime: "7 min read",
-    content: `
+// ── ARTICLE 11 ──
+{
+slug: "how-to-use-perplexity-ai-for-research",
+title: "How to Use Perplexity AI for Research (Complete Guide)",
+description: "A practical guide to using Perplexity AI for academic research, market research, fact-checking, and competitive analysis. Pro tips and advanced techniques.",
+category: "How-To",
+categorySlug: "how-to",
+date: "September 6, 2026",
+readTime: "7 min read",
+content: `
 <p>Perplexity AI is the most powerful research tool available in 2026 — if you know how to use it effectively. Most people use it like a search engine, typing simple queries and accepting the first result. Here is how to get dramatically better results.</p>
 
 <h2>Step 1: Use Focus Modes</h2>
@@ -447,18 +258,19 @@ Price: Free tier available / Pro at $20/month
 <p>Ask Perplexity to compare conflicting sources: "Source A says X but Source B says Y — what does the evidence actually support?" This forces it to evaluate source quality rather than just summarizing.</p>
 <p>For competitive research, ask specific questions: "What pricing changes has [competitor] made in the last 6 months?" rather than generic "tell me about [competitor]."</p>
 <p>Export your research threads as documents to create research briefs that include all citations — useful for sharing with teams or including in reports.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "cursor-ide-review-2026",
-    title: "Cursor IDE Review 2026: Is It Worth Switching From VS Code?",
-    description: "A hands-on review of Cursor, the AI-native code editor. We test Composer, Tab completion, and multi-file editing to see if it justifies the switch from VS Code.",
-    category: "Reviews",
-    categorySlug: "reviews",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 12 ──
+{
+slug: "cursor-ide-review-2026",
+title: "Cursor IDE Review 2026: Is It Worth Switching From VS Code?",
+description: "A hands-on review of Cursor, the AI-native code editor. We test Composer, Tab completion, and multi-file editing to see if it justifies the switch from VS Code.",
+category: "Reviews",
+categorySlug: "reviews",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>Cursor is the AI coding editor that developers cannot stop talking about. Built on VS Code, it promises to make AI not just an add-on but the core development experience. After several months of daily use for production work, here is whether it lives up to the hype.</p>
 
 <h2>The Setup Experience</h2>
@@ -480,18 +292,19 @@ Price: Free tier available / Pro at $20/month
 <p>If you write code for more than an hour a day, Cursor is worth it. The productivity gain from Composer alone — being able to describe features and watch them get built — changes how you work. The fact that it is just VS Code underneath means there is zero risk in trying it: your muscle memory, extensions, and settings all come with you.</p>
 
 <div class="rating"><strong>Our Rating: 9.0/10</strong><br/>Best for: Full-stack developers, TypeScript/React projects, rapid prototyping<br/>Price: Free tier / Pro $20/month</div>
-`,
-  },
+`
+},
 
-  {
-    slug: "best-ai-video-generators-2026",
-    title: "Best AI Video Generators in 2026: Sora, Veo, Kling Compared",
-    description: "We tested the leading AI video generators for quality, motion realism, and ease of use. Here are the best options for creators and marketers.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 6, 2026",
-    readTime: "7 min read",
-    content: `
+// ── ARTICLE 13 ──
+{
+slug: "best-ai-video-generators-2026",
+title: "Best AI Video Generators in 2026: Sora, Veo, Kling Compared",
+description: "We tested the leading AI video generators for quality, motion realism, and ease of use. Here are the best options for creators and marketers.",
+category: "Best Of",
+categorySlug: "best-of",
+date: "September 6, 2026",
+readTime: "7 min read",
+content: `
 <p>AI video generation has gone from a novelty to a legitimate production tool in 2026. The latest models produce clips that could pass for professional footage in many contexts. Here are the best options for different needs.</p>
 
 <h2>1. Google Veo 3 — Best Overall Quality</h2>
@@ -514,18 +327,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>The State of AI Video in 2026</h2>
 <p>AI video is ready for social media content, concept visualization, product demos, and short-form marketing. It is not yet ready to replace professional videography for long-form content or narrative filmmaking — consistency across longer clips remains a challenge. But for anything under 30 seconds, the quality is often indistinguishable from traditionally produced footage.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "gemini-vs-chatgpt-2026",
-    title: "Gemini vs ChatGPT in 2026: Google's AI Finally Catches Up?",
-    description: "A detailed comparison of Gemini Advanced and ChatGPT Plus. We test both on writing, research, coding, and daily tasks to see which delivers more value.",
-    category: "Comparisons",
-    categorySlug: "comparisons",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 14 ──
+{
+slug: "gemini-vs-chatgpt-2026",
+title: "Gemini vs ChatGPT in 2026: Google's AI Finally Catches Up?",
+description: "A detailed comparison of Gemini Advanced and ChatGPT Plus. We test both on writing, research, coding, and daily tasks to see which delivers more value.",
+category: "Comparisons",
+categorySlug: "comparisons",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>Google Gemini has improved dramatically since its rocky launch. In 2026, with the Gemini 2.5 models and deep Google ecosystem integration, it is finally a serious competitor to ChatGPT. But is it enough to switch? We tested both extensively.</p>
 
 <h2>Research and Information Accuracy</h2>
@@ -552,18 +366,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>The Bottom Line</h2>
 <p>Choose Gemini if you live in the Google ecosystem and prioritize research accuracy and multimodal capabilities. Choose ChatGPT if writing quality, coding, and the broadest feature set matter most. At $20/month for both, the choice comes down to your specific workflow and which ecosystem you already use.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "best-ai-tools-for-small-business-2026",
-    title: "9 Best AI Tools for Small Business in 2026 (Save Time and Money)",
-    description: "Practical AI tools that actually help small businesses — from invoicing and email to marketing and customer support. No enterprise fluff, just tools that work.",
-    category: "Best Of",
-    categorySlug: "best-of",
-    date: "September 6, 2026",
-    readTime: "9 min read",
-    content: `
+// ── ARTICLE 15 ──
+{
+slug: "best-ai-tools-for-small-business-2026",
+title: "9 Best AI Tools for Small Business in 2026 (Save Time and Money)",
+description: "Practical AI tools that actually help small businesses — from invoicing and email to marketing and customer support. No enterprise fluff, just tools that work.",
+category: "Best Of",
+categorySlug: "best-of",
+date: "September 6, 2026",
+readTime: "9 min read",
+content: `
 <p>Most "AI for business" articles recommend enterprise tools that cost thousands per month. This guide is for actual small businesses — freelancers, agencies, local shops, and startups with budgets measured in tens of dollars, not thousands. These are the AI tools that save real time and money.</p>
 
 <h2>1. Claude or ChatGPT — Your AI Business Assistant</h2>
@@ -603,18 +418,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>Start With One, Scale Up</h2>
 <p>Do not sign up for all nine at once. Start with a general AI assistant (Claude or ChatGPT) — it covers the widest range of tasks. Add specialized tools as specific pain points become clear. Most small businesses see the biggest impact from AI in communication (email, proposals), content creation (social media, marketing), and time management (scheduling, meetings).</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "midjourney-vs-dall-e-vs-flux-2026",
-    title: "Midjourney vs DALL-E vs Flux: Which AI Image Generator Should You Use?",
-    description: "A direct comparison of the three most popular AI image generators. We test each on the same prompts to show real differences in quality, style, and usability.",
-    category: "Comparisons",
-    categorySlug: "comparisons",
-    date: "September 6, 2026",
-    readTime: "7 min read",
-    content: `
+// ── ARTICLE 16 ──
+{
+slug: "midjourney-vs-dall-e-vs-flux-2026",
+title: "Midjourney vs DALL-E vs Flux: Which AI Image Generator Should You Use?",
+description: "A direct comparison of the three most popular AI image generators. We test each on the same prompts to show real differences in quality, style, and usability.",
+category: "Comparisons",
+categorySlug: "comparisons",
+date: "September 6, 2026",
+readTime: "7 min read",
+content: `
 <p>Choosing between Midjourney, DALL-E, and Flux is one of the most common questions in the AI image space. Each has a distinct personality and set of trade-offs. We ran identical prompts through all three to show the real differences.</p>
 
 <h2>Image Quality</h2>
@@ -637,18 +453,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>Our Recommendation</h2>
 <p>If you already pay for ChatGPT Plus, start with DALL-E — it is included and handles most use cases well. If you need the highest visual quality for professional or commercial work, add Midjourney. If you need high volume, full control, or want to avoid subscription costs, invest the time to set up Flux locally.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "how-to-build-ai-workflow-make-zapier",
-    title: "How to Build an AI Workflow with Make or Zapier (Step-by-Step)",
-    description: "A practical guide to automating repetitive tasks by connecting AI tools with Make (formerly Integromat) or Zapier. Real examples for content, email, and data.",
-    category: "Productivity",
-    categorySlug: "productivity",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 17 ──
+{
+slug: "how-to-build-ai-workflow-make-zapier",
+title: "How to Build an AI Workflow with Make or Zapier (Step-by-Step)",
+description: "A practical guide to automating repetitive tasks by connecting AI tools with Make (formerly Integromat) or Zapier. Real examples for content, email, and data.",
+category: "Productivity",
+categorySlug: "productivity",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>AI tools are powerful individually. Connected together through automation, they become transformative. This guide shows you how to build AI workflows that run on autopilot using Make (formerly Integromat) or Zapier — no coding required.</p>
 
 <h2>What Is an AI Workflow?</h2>
@@ -675,18 +492,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>Getting Started</h2>
 <p>Pick one workflow that addresses your biggest time drain. Build it, test it for a week, refine it. Then add the next one. Most people try to automate everything at once and burn out — start with one high-impact automation and let it prove the value before expanding.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "notion-ai-review-2026",
-    title: "Notion AI Review 2026: Worth the $10/Month Add-On?",
-    description: "An honest review of Notion AI for writing, summarizing, brainstorming, and organizing. We test it against using Claude or ChatGPT directly.",
-    category: "Reviews",
-    categorySlug: "reviews",
-    date: "September 6, 2026",
-    readTime: "6 min read",
-    content: `
+// ── ARTICLE 18 ──
+{
+slug: "notion-ai-review-2026",
+title: "Notion AI Review 2026: Worth the $10/Month Add-On?",
+description: "An honest review of Notion AI for writing, summarizing, brainstorming, and organizing. We test it against using Claude or ChatGPT directly.",
+category: "Reviews",
+categorySlug: "reviews",
+date: "September 6, 2026",
+readTime: "6 min read",
+content: `
 <p>Notion has been the productivity darling for years. The AI add-on promises to bring AI capabilities directly into your workspace. At $10/month on top of your existing Notion plan, is it worth it — or should you just use Claude or ChatGPT in a separate tab?</p>
 
 <h2>What Notion AI Does Well</h2>
@@ -705,18 +523,19 @@ Price: Free tier available / Pro at $20/month
 <p>Notion AI is worth it if you are already a heavy Notion user and want AI that works with your existing data. It is not worth it as your primary AI tool — the quality does not match dedicated AI assistants. Think of it as a productivity booster for Notion, not a standalone AI product.</p>
 
 <div class="rating"><strong>Our Rating: 7.5/10</strong><br/>Best for: Heavy Notion users who want contextual AI<br/>Price: $10/month add-on per member</div>
-`,
-  },
+`
+},
 
-  {
-    slug: "how-to-use-ai-for-email-marketing",
-    title: "How to Use AI for Email Marketing That Actually Converts (2026 Guide)",
-    description: "Practical AI strategies for email subject lines, copywriting, segmentation, and A/B testing. Tools and prompts that turn AI into your email marketing team.",
-    category: "How-To",
-    categorySlug: "how-to",
-    date: "September 6, 2026",
-    readTime: "7 min read",
-    content: `
+// ── ARTICLE 19 ──
+{
+slug: "how-to-use-ai-for-email-marketing",
+title: "How to Use AI for Email Marketing That Actually Converts (2026 Guide)",
+description: "Practical AI strategies for email subject lines, copywriting, segmentation, and A/B testing. Tools and prompts that turn AI into your email marketing team.",
+category: "How-To",
+categorySlug: "how-to",
+date: "September 6, 2026",
+readTime: "7 min read",
+content: `
 <p>Email marketing remains the highest-ROI marketing channel, and AI makes it dramatically more effective. Not through generic "AI-written emails" but through strategic use at each stage of the email process. Here is how.</p>
 
 <h2>Step 1: Subject Line Optimization</h2>
@@ -740,18 +559,19 @@ Price: Free tier available / Pro at $20/month
 
 <h2>The Key Principle</h2>
 <p>AI writes the first draft. You add the human elements — personal stories, specific customer references, authentic voice. Emails that convert feel personal, and AI cannot fake that. But AI can handle the 80% of email writing that is structure, variation, and optimization, freeing you to focus on the 20% that makes it feel real.</p>
-`,
-  },
+`
+},
 
-  {
-    slug: "ai-productivity-stack-2026",
-    title: "The Perfect AI Productivity Stack for 2026 (Under $60/Month)",
-    description: "Build a complete AI-powered productivity system for under $60/month. The exact tools, how they connect, and the daily workflow that saves 10+ hours per week.",
-    category: "Productivity",
-    categorySlug: "productivity",
-    date: "September 6, 2026",
-    readTime: "8 min read",
-    content: `
+// ── ARTICLE 20 ──
+{
+slug: "ai-productivity-stack-2026",
+title: "The Perfect AI Productivity Stack for 2026 (Under $60/Month)",
+description: "Build a complete AI-powered productivity system for under $60/month. The exact tools, how they connect, and the daily workflow that saves 10+ hours per week.",
+category: "Productivity",
+categorySlug: "productivity",
+date: "September 6, 2026",
+readTime: "8 min read",
+content: `
 <p>You do not need 15 AI subscriptions. You need the right 3-4 tools working together. Here is the productivity stack we use daily and how each piece fits together for under $60/month total.</p>
 
 <h2>The Core Stack</h2>
@@ -781,18 +601,52 @@ Price: Free tier available / Pro at $20/month
 <p>Each tool does one thing exceptionally well and does not overlap with the others. Claude thinks, Perplexity researches, Notion organizes, Cursor codes. No redundancy, no feature overlap, and each tool is best-in-class for its function. This beats paying for one "do everything" tool that does nothing exceptionally.</p>
 
 <p>Start with Claude Pro alone if budget is tight — it covers the widest range of tasks. Add Perplexity when you find yourself spending too much time on research. Add Cursor when coding productivity matters. Build the stack based on your actual pain points, not aspirational ones.</p>
-`,
-  },
+`
+},
+
 ];
 
-export function getPostsByCategory(categorySlug: string): Post[] {
-  return posts.filter((p) => p.categorySlug === categorySlug);
+// Read current file
+let content = fs.readFileSync(POSTS_FILE, "utf-8");
+
+// Check how many are already added
+let added = 0;
+let skipped = 0;
+
+for (const article of NEW_ARTICLES) {
+  if (content.includes('"' + article.slug + '"')) {
+    skipped++;
+    continue;
+  }
+  
+  // Build the article entry string
+  const entry = `
+  {
+    slug: ${JSON.stringify(article.slug)},
+    title: ${JSON.stringify(article.title)},
+    description: ${JSON.stringify(article.description)},
+    category: ${JSON.stringify(article.category)},
+    categorySlug: ${JSON.stringify(article.categorySlug)},
+    date: ${JSON.stringify(article.date)},
+    readTime: ${JSON.stringify(article.readTime)},
+    content: \`${article.content}\`,
+  },`;
+  
+  // Insert before the closing ]; of the posts array
+  const insertPoint = content.lastIndexOf("];");
+  if (insertPoint === -1) {
+    console.log("ERROR: Could not find end of posts array");
+    process.exit(1);
+  }
+  
+  content = content.slice(0, insertPoint) + entry + "\n" + content.slice(insertPoint);
+  added++;
+  console.log("ADD: " + article.slug);
 }
 
-export function getPost(slug: string): Post | undefined {
-  return posts.find((p) => p.slug === slug);
+if (added > 0) {
+  fs.writeFileSync(POSTS_FILE, content, "utf-8");
 }
 
-export function getCategoryBySlug(slug: string) {
-  return categories.find((c) => c.slug === slug);
-}
+console.log("\nDone: " + added + " articles added, " + skipped + " skipped (already exist)");
+console.log("Total articles in posts.ts: " + (content.match(/slug:/g) || []).length);
