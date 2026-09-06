@@ -2954,7 +2954,205 @@ Price: Free tier available / Pro at $20/month
 <p>Use AI for content creation — the efficiency gains are too significant to ignore. But never publish AI output without human review and enhancement. Add your unique perspective to every piece. Be transparent about AI use if your audience expects it. Focus on creating content that genuinely helps your readers, and the SEO will follow.</p>
 <p>The sites that will be penalized in 2026 and beyond are not the ones using AI — they are the ones using AI lazily, producing volume without value. Quality remains the only sustainable SEO strategy, whether your first draft comes from a human or a machine.</p>
 `,
+  },,
+
+  {
+    slug: "how-to-use-ai-to-translate-books-multiple-languages",
+    title: "How to Use AI to Translate and Publish Books in Multiple Languages",
+    description: "Learn how to use AI translation tools to publish your books in 15+ languages on Amazon KDP and multiply your revenue.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "9 min read",
+    content: "<p>Most self-published authors compete in a single language market. Meanwhile, entire Amazon marketplaces sit wide open with hungry readers and almost zero competition.</p>\n<p>Modern AI translation tools have made it possible to publish books in 15 or more languages without speaking any of them. The key is knowing which tools to use, how to prompt them correctly, and how to maintain quality across every edition.</p>\n<h2>Why Multilingual Publishing Is the Biggest Opportunity in Self-Publishing</h2>\n<p>A book earning $200 per month in English can generate an additional $50 to $150 per month in each new language. Add ten languages and that same book earns $700 to $1,700 per month from the same core content.</p>\n<p>The reason this works is competition. A keyword with 50,000 competing titles in English might have 200 in Portuguese or 80 in Polish. Your professionally produced title could be one of the only quality options in its category.</p>\n<h2>Best AI Tools for Book Translation</h2>\n<p>Claude AI is currently the strongest tool for book-length translation. It handles nuance, cultural adaptation, and formatting preservation better than alternatives. ChatGPT is a solid backup for brainstorming and shorter passages.</p>\n<p>The critical difference between AI translation that works and AI translation that fails is prompting. You need to provide context about genre, tone, target audience, and formatting requirements. Translating chapter by chapter rather than the entire book at once produces dramatically better results.</p>\n<h2>The Contamination Scan Protocol</h2>\n<p>The number one quality killer in multilingual publishing is foreign word contamination. Even one misplaced English word in a French manuscript destroys credibility and generates negative reviews.</p>\n<p>After every translation, search the text for common English words like articles, conjunctions, and prepositions. This takes fifteen minutes and prevents ninety percent of translation-related bad reviews.</p>\n<h2>Which Languages to Publish In First</h2>\n<p>Not all languages are equal on Amazon KDP. Start with Tier 1 languages that have established Kindle marketplaces: French, German, Spanish, Italian, and Portuguese. These markets have active readers and relatively low competition.</p>\n<p>Then expand to Tier 2 languages like Dutch, Swedish, Danish, Polish, and Japanese. These markets are smaller but competition is almost nonexistent.</p>\n<h2>Getting Started</h2>\n<p>The multilingual publishing system involves choosing your languages strategically, building a repeatable production pipeline, optimizing keywords for each market, and running quality control on every edition.</p>\n<p>For the complete system including keyword examples in multiple languages, pricing strategies for 14 markets, and printable launch checklists, check out <a href=\"https://indiepress.gumroad.com/l/ozncal\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Multilingual Mastery</a> by IndiePress Toolkit.</p>",
   },
+
+  {
+    slug: "best-ai-translation-tools-self-publishing-2026",
+    title: "Best AI Translation Tools for Self-Publishing Authors in 2026",
+    description: "Compare the top AI translation tools for publishing books in multiple languages on Amazon KDP.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>AI translation has reached a tipping point for self-publishing. Tools like Claude, ChatGPT, and DeepL now produce publication-quality translations for most European languages when used correctly.</p>\n<h2>Claude AI</h2>\n<p>Claude is currently the strongest option for book translation. Its large context window handles full chapters without losing coherence. It follows complex formatting instructions including dialogue style, quotation marks, and cultural adaptation. Best for fiction where voice matters and nonfiction where accuracy is critical. Pricing: $20 per month for Pro.</p>\n<h2>ChatGPT (GPT-4)</h2>\n<p>ChatGPT is excellent for brainstorming, outlining, and shorter translation tasks. It sometimes loses consistency in longer chapters but produces solid first drafts. Best for nonfiction translation and metadata. Pricing: $20 per month for Plus.</p>\n<h2>DeepL</h2>\n<p>DeepL produces clean, accurate translations but lacks creative adaptation. It translates literally rather than culturally, which works for technical content but falls flat for fiction. Pricing: Free tier available, Pro from $8.74 per month.</p>\n<h2>Google Translate</h2>\n<p>Not recommended for book publishing. Output reads as obviously machine-translated and readers notice immediately.</p>\n<h2>The Real Secret: Process Over Tool</h2>\n<p>The difference between publishable AI translation and embarrassing AI translation is not which tool you use but how you use it. Structured prompts with genre context, formatting requirements, and cultural guidance produce dramatically better results.</p>\n<h2>The Complete Multilingual System</h2>\n<p>For the full production pipeline including translation prompts, quality protocols, and keyword optimization across 15 plus languages, see <a href=\"https://indiepress.gumroad.com/l/ozncal\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Multilingual Mastery</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-sell-books-amazon-15-languages",
+    title: "How to Sell Books on Amazon in 15 Languages Without Speaking Them",
+    description: "A practical guide to publishing books in multiple languages on Amazon KDP using AI tools.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>You do not need to speak fifteen languages to sell books in fifteen languages. With modern AI tools and a systematic approach, any author can expand from one market to fifteen in weeks.</p>\n<h2>The Revenue Math</h2>\n<p>A nonfiction title earning $180 per month in English generates approximately $480 per month after expanding to ten languages. Each additional language costs three to five hours of one-time work. Now multiply by ten titles for $4,800 per month.</p>\n<h2>The Four-Step Process</h2>\n<p>Step one: choose languages strategically using a data-driven tier system. Step two: AI-assisted translation with structured prompts. Step three: metadata optimization with language-specific keywords and descriptions. Step four: quality control including contamination scans and cover text verification.</p>\n<h2>Markets You Are Probably Ignoring</h2>\n<p>The real hidden opportunities are in smaller markets like Danish, Swedish, Polish, and Dutch. These markets have engaged Kindle readers and virtually zero competition. A professionally produced title can rank at the top of its category with no marketing.</p>\n<h2>Common Mistakes</h2>\n<p>Translating titles literally instead of adapting them. Using the same price everywhere. Skipping quality control. Publishing with English text on foreign covers. Each error costs sales and generates negative reviews.</p>\n<h2>Get the Complete System</h2>\n<p>The full multilingual system including the four-tier language framework, keyword examples, pricing for fourteen markets, and printable checklists is available in <a href=\"https://indiepress.gumroad.com/l/ozncal\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Multilingual Mastery</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-write-book-with-ai-10-days",
+    title: "How to Write a Complete Book With AI in 10 Days",
+    description: "The exact 10-day process to go from outline to published book using AI tools.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "9 min read",
+    content: "<p>The difference between an author who publishes two books a year and one who publishes twenty is not talent. It is systems. AI gives you the systems to produce at scale without sacrificing quality.</p>\n<h2>The 10-Day Timeline</h2>\n<p>Day one: research and outline using AI for brainstorming and structure. Days two through five: write chapters with AI, working chapter by chapter. Day six: first editing pass focusing on structure and AI artifacts. Day seven: quality control with spelling, grammar, and contamination scans. Day eight: cover generation and interior formatting. Day nine: metadata optimization. Day ten: upload to KDP and publish.</p>\n<h2>Your Role vs AI Role</h2>\n<p>AI is not writing the book for you. You are the creative director deciding the story, structure, voice, and emotional beats. AI handles mechanical expansion, consistency checking, and formatting.</p>\n<h2>Avoiding AI-Sounding Content</h2>\n<p>The biggest risk is generic, machine-sounding content. The solution is specific direction. Instead of telling AI to write a sad scene, describe the exact moment and emotional subtext you want. Specificity produces authenticity.</p>\n<h2>AI Artifacts to Remove</h2>\n<p>Search and destroy: in todays fast-paced world, its worth noting, delve into, tapestry of, navigate the landscape. These phrases signal AI authorship.</p>\n<h2>The Complete Workflow</h2>\n<p>For fourteen prompt templates, genre-specific workflows, and the quality checklist, see <a href=\"https://indiepress.gumroad.com/l/ydgira\" target=\"_blank\" rel=\"noopener noreferrer\">AI Book Production Workflow</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "best-ai-tools-book-writing-publishing-2026",
+    title: "Best AI Tools for Book Writing and Publishing in 2026",
+    description: "A comprehensive comparison of AI tools for every stage of book production.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>The AI tool landscape for authors has exploded in 2026. The key is knowing which tools to use for which stage and how to combine them efficiently.</p>\n<h2>Writing and Drafting</h2>\n<p>Claude AI leads for long-form writing with its large context window and style instruction following. At $20 per month, it handles two to four books monthly. ChatGPT excels at brainstorming and quick creative tasks.</p>\n<h2>Cover Design</h2>\n<p>Midjourney produces the most photorealistic book cover images. Always specify no text in the generated image and add typography separately. DALL-E through ChatGPT is a convenient alternative.</p>\n<h2>Translation</h2>\n<p>For book-length translation, Claude handles cultural adaptation and voice preservation best. DeepL is useful for reference but produces overly literal translations.</p>\n<h2>Formatting and Keywords</h2>\n<p>Atticus remains the standard for professional formatting at $147 one-time. Publisher Rocket is essential for Amazon-specific keyword data.</p>\n<h2>The Minimum Stack</h2>\n<p>Claude Pro ($20/month) plus Midjourney ($10/month) plus Atticus ($147 one-time). Total ongoing: $30 per month for a professional pipeline.</p>\n<h2>Putting It Together</h2>\n<p>For the complete workflow connecting these tools with prompt templates and checklists, check out <a href=\"https://indiepress.gumroad.com/l/ydgira\" target=\"_blank\" rel=\"noopener noreferrer\">AI Book Production Workflow</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "ai-book-production-workflow-outline-to-published",
+    title: "AI Book Production: The Complete Workflow From Outline to Published",
+    description: "A detailed walkthrough of the 5-phase AI book production model.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "9 min read",
+    content: "<p>Producing a book with AI is a structured five-phase process where AI handles mechanical work while you handle creative direction.</p>\n<h2>Phase 1: Blueprint</h2>\n<p>Start with a detailed outline. For nonfiction: define the problem and transformation, list chapters with key points. For fiction: define protagonist, antagonist, conflict, and three-act structure. AI helps brainstorm but creative decisions are yours.</p>\n<h2>Phase 2: Draft</h2>\n<p>Write chapter by chapter with context from previous chapters, tone direction, and formatting requirements. For fiction, provide emotional beats. For nonfiction, provide key points and examples.</p>\n<h2>Phase 3: Polish</h2>\n<p>Three editing passes. Remove AI artifacts and filler phrases. Add human specificity with sensory details and subtext. Run technical checks including contamination scans.</p>\n<h2>Phase 4: Package</h2>\n<p>Generate covers with AI, add typography separately. Format for KDP. Write descriptions. Fill keyword fields. Select categories.</p>\n<h2>Phase 5: Publish</h2>\n<p>Upload to KDP, verify preview, set publication date, monitor for seven days.</p>\n<h2>The Full System</h2>\n<p>For prompt templates, genre workflows, the ten-day calendar, and scaling strategies, see <a href=\"https://indiepress.gumroad.com/l/ydgira\" target=\"_blank\" rel=\"noopener noreferrer\">AI Book Production Workflow</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-launch-self-published-book-amazon-kdp",
+    title: "How to Launch a Self-Published Book on Amazon KDP: Complete Guide",
+    description: "The step-by-step process to launch your book on Amazon KDP successfully.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "9 min read",
+    content: "<p>Most self-published books fail not because they are bad but because they are invisible. The launch process determines whether Amazon notices your book or ignores it.</p>\n<h2>The Three Pillars</h2>\n<p>Discoverability: can readers find your book? Conversion: do they buy when they find it? Momentum: does early activity feed the algorithm? Every launch step serves one of these pillars.</p>\n<h2>Pre-Launch: Market Validation</h2>\n<p>Study the top twenty books in your category. Check covers, prices, and reviews. Use Publisher Rocket for keyword research. Identify high-demand, low-competition opportunities.</p>\n<h2>Your Cover Is Everything</h2>\n<p>Must signal your genre at thumbnail size. Test at 120 pixels wide. If you cannot read the title or identify the genre, redesign.</p>\n<h2>Metadata Optimization</h2>\n<p>Seven keyword fields, two categories, and HTML-formatted description determine discoverability. Use the zero-repetition system.</p>\n<h2>Launch Week</h2>\n<p>First seven days set trajectory. Use ARC readers for day-one reviews. Promote on social media. Consider a brief launch discount.</p>\n<h2>The Complete System</h2>\n<p>For the full ten-week timeline with checklists, Amazon Ads guide, and fifteen mistakes to avoid, see <a href=\"https://indiepress.gumroad.com/l/nqueqf\" target=\"_blank\" rel=\"noopener noreferrer\">Self-Publishing Launch Playbook</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "amazon-kdp-launch-checklist-first-sale",
+    title: "Amazon KDP Launch Checklist: 10 Steps to Your First Sale",
+    description: "A concise 10-step checklist for launching your book on Amazon KDP.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "7 min read",
+    content: "<p>Launching on Amazon KDP involves dozens of details. Here are the ten essential steps distilled from hundreds of successful launches.</p>\n<h2>Step 1: Validate Your Market</h2>\n<p>Search your topic on Amazon. If the top result has BSR above 100,000, demand exists but supply is weak.</p>\n<h2>Step 2: Polish Your Manuscript</h2>\n<p>Complete quality audit: spelling, grammar, consistency. Add front and back matter with review request CTA.</p>\n<h2>Step 3: Design Your Cover</h2>\n<p>Genre-appropriate, readable at thumbnail size. AI-generated base with separate typography.</p>\n<h2>Step 4: Format Interior</h2>\n<p>Use Atticus or DOCX formatting. Verify every page with PDF preview.</p>\n<h2>Step 5: Optimize Keywords</h2>\n<p>Seven fields, zero-repetition, one English field for cross-language discovery.</p>\n<h2>Step 6: Write Description</h2>\n<p>HTML-formatted with bold, checkmarks, emotional hook, and call to action.</p>\n<h2>Step 7: Set Pricing</h2>\n<p>$4.99 USD standard for 70 percent royalty. Adjust for international markets.</p>\n<h2>Step 8: Upload and Preview</h2>\n<p>KDP Select YES, 70 percent royalty, all territories.</p>\n<h2>Step 9: Execute Launch</h2>\n<p>Notify ARC team, share on social media, monitor BSR daily.</p>\n<h2>Step 10: Optimize</h2>\n<p>Check rankings, start Amazon Ads, plan next book.</p>\n<h2>The Detailed Version</h2>\n<p>For phase-by-phase instructions, Ads guide, templates, and checklists, see <a href=\"https://indiepress.gumroad.com/l/nqueqf\" target=\"_blank\" rel=\"noopener noreferrer\">Self-Publishing Launch Playbook</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "best-tools-strategies-self-publishing-2026",
+    title: "Best Tools and Strategies for Self-Publishing Success in 2026",
+    description: "Essential tools and strategies for building a profitable self-publishing business.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Self-publishing in 2026 is a mature industry. The winners use systems that maximize discoverability and minimize wasted effort.</p>\n<h2>The Production Stack</h2>\n<p>Claude AI for writing and translation, Midjourney for covers, Atticus for formatting, Publisher Rocket for keywords. Total monthly: thirty dollars.</p>\n<h2>KDP Optimization</h2>\n<p>Amazon rewards relevance through keywords, velocity through launch momentum, and consistency through regular publishing.</p>\n<h2>The Multilingual Advantage</h2>\n<p>AI translation makes fifteen-plus languages possible with three to five hours per language. Markets like Danish and Polish have almost zero competition.</p>\n<h2>Series Over Standalones</h2>\n<p>Series build momentum. Each book boosts the previous ones. Amazon recommends the series as a whole.</p>\n<h2>Amazon Ads</h2>\n<p>Five to ten dollars per day generates visibility and trains the algorithm. Kill underperformers, scale winners.</p>\n<h2>The Complete System</h2>\n<p>For a complete launch system with checklists, templates, and Ads guide, check out <a href=\"https://indiepress.gumroad.com/l/nqueqf\" target=\"_blank\" rel=\"noopener noreferrer\">Self-Publishing Launch Playbook</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-use-ai-plan-fiction-book-series",
+    title: "How to Use AI to Plan and Track a Fiction Book Series",
+    description: "Learn how AI tools can help you plan character arcs and maintain series continuity.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Planning a fiction series is exponentially more complex than a standalone novel. Characters evolve, plot threads weave through volumes, and continuity errors become likely. AI tools help at every stage.</p>\n<h2>Series Arc Planning</h2>\n<p>Use AI to brainstorm overarching conflict, per-book focus, and conclusion. Provide your premise and characters, then ask for a series arc with cliffhanger strategy.</p>\n<h2>Character Development</h2>\n<p>Characters must evolve while remaining recognizable. AI helps map arcs, identify contradictions, and develop secondary characters. Create detailed profiles including traits, speech patterns, and backstory.</p>\n<h2>Plot Thread Management</h2>\n<p>Track every open thread: when introduced, which book develops it, where it resolves. AI can review your tracker before each book to catch dropped threads.</p>\n<h2>Continuity Checking</h2>\n<p>Before publishing, verify: ages match timeline, descriptions are consistent, relationships track, world rules hold.</p>\n<h2>The Complete System</h2>\n<p>For ready-to-use templates including character sheets, relationship maps, and a twenty-point continuity checklist, see <a href=\"https://indiepress.gumroad.com/l/guysij\" target=\"_blank\" rel=\"noopener noreferrer\">Author Series Bible Template</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "best-ai-tools-fiction-writers-characters-worldbuilding",
+    title: "Best AI Tools for Fiction Writers: Characters, Plot, and World Building",
+    description: "How fiction writers can use AI for character development, plot structure, and world building.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Fiction writing is where AI assistance gets nuanced. AI cannot produce emotional authenticity alone, but it is remarkably powerful as a brainstorming partner and production assistant.</p>\n<h2>Character Development</h2>\n<p>AI generates profiles, explores backstories, and identifies conflicts. The trick is specificity: describe the contradiction that makes your antagonist human rather than asking for a generic villain.</p>\n<h2>Plot Structure</h2>\n<p>AI maps three-act structure, identifies pacing issues, and suggests twists. For series, it maintains macro structure across volumes.</p>\n<h2>World Building</h2>\n<p>Every story has rules. AI helps define power structures, dynamics, geography, and consequences. Document everything because inconsistencies generate negative reviews.</p>\n<h2>Dialogue</h2>\n<p>AI dialogue tends toward symmetry. Real dialogue is asymmetric with subtext. Use AI for drafts, then rewrite for distinct character voices.</p>\n<h2>Organizing It All</h2>\n<p>For a complete system to organize characters, relationships, plots, and continuity, check out <a href=\"https://indiepress.gumroad.com/l/guysij\" target=\"_blank\" rel=\"noopener noreferrer\">Author Series Bible Template</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-maintain-continuity-fiction-series",
+    title: "How to Maintain Continuity Across a Multi-Book Fiction Series",
+    description: "Practical strategies to prevent continuity errors and plot holes in fiction series.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "7 min read",
+    content: "<p>Your protagonist had green eyes in book one and blue in book three. A dead character is alive in the sequel. The timeline contradicts itself. Your reader noticed and their review mentions it.</p>\n<h2>Character Consistency</h2>\n<p>Physical descriptions are the most common source of errors. Create a reference sheet for every recurring character and check it before every scene.</p>\n<h2>Timeline Management</h2>\n<p>Build a chronological timeline across all books. Note dates, seasons, and time gaps. Verify every temporal reference.</p>\n<h2>Relationship Tracking</h2>\n<p>Who knows whose secrets? Who has met whom? Track connections, alliances, rivalries, and romantic history to prevent impossible interactions.</p>\n<h2>Subplot Management</h2>\n<p>Track every open thread from introduction to resolution. Readers forgive slow resolution but never forgotten threads.</p>\n<h2>The Pre-Publication Check</h2>\n<p>Run a systematic checklist: ages consistent, descriptions match, relationships track, world rules intact. Fifteen minutes prevents permanent negative reviews.</p>\n<h2>The Complete System</h2>\n<p>For a series bible with character sheets, trackers, and a twenty-point continuity checklist, see <a href=\"https://indiepress.gumroad.com/l/guysij\" target=\"_blank\" rel=\"noopener noreferrer\">Author Series Bible Template</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "how-to-optimize-amazon-kdp-keywords-ai",
+    title: "How to Optimize Amazon KDP Keywords With AI Tools",
+    description: "Learn how to use AI to optimize your Amazon KDP keyword fields for maximum discoverability.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Amazon gives you seven keyword fields with fifty characters each. Most authors waste them. Understanding how the search algorithm processes keywords changes everything.</p>\n<h2>How Keywords Work</h2>\n<p>Amazon treats your seven fields as a pool of individual words combined with your title, subtitle, and category. Word order does not matter. Repeating a word across fields is wasted space.</p>\n<h2>The Zero-Repetition System</h2>\n<p>Each word appears exactly once across all seven fields. Spaces only, no commas. Fifty characters max per field. At least one English field for cross-language discovery.</p>\n<h2>Using AI</h2>\n<p>AI breaks down Publisher Rocket phrases into words, removes duplicates, sorts by frequency, and distributes optimally across seven fields.</p>\n<h2>Indexing vs Ranking</h2>\n<p>Keywords get you indexed. Ranking depends on sales, reviews, and click-through rates. Keywords are the foundation.</p>\n<h2>Common Mistakes</h2>\n<p>Commas break parsing. Generic words waste space. All fields in one language misses cross-language discovery.</p>\n<h2>The Complete System</h2>\n<p>For ten real examples across six languages, worksheets, and a quick-reference card, see <a href=\"https://indiepress.gumroad.com/l/qcjnef\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Keywords Cheat Sheet</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "amazon-kdp-keyword-research-ai-strategies",
+    title: "Amazon KDP Keyword Research: AI-Powered Strategies for 2026",
+    description: "Advanced keyword research strategies for Amazon KDP using AI and Publisher Rocket.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Keyword research is the foundation of discoverability on Amazon KDP. AI tools make it faster and more systematic.</p>\n<h2>Starting With Publisher Rocket</h2>\n<p>Rocket provides Amazon-specific search volume, competition, and earnings data. Export top fifty phrases sorted by volume.</p>\n<h2>AI Processing</h2>\n<p>Feed data to Claude: break phrases into words, remove duplicates, sort by frequency, group into seven fields of fifty characters each.</p>\n<h2>Long-Tail Keywords</h2>\n<p>Specific phrases have lower volume but higher buyer intent. Mix broad terms for volume with specific terms for conversion.</p>\n<h2>Seasonal Rotation</h2>\n<p>Some keywords spike seasonally. Swap in seasonal terms before peaks. Amazon lets you update anytime.</p>\n<h2>Competitor Mining</h2>\n<p>Find keyword gaps your competitors missed. These are your easiest ranking opportunities.</p>\n<h2>Real Examples</h2>\n<p>For ten complete examples across six languages and printable worksheets, see <a href=\"https://indiepress.gumroad.com/l/qcjnef\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Keywords Cheat Sheet</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "best-ai-tools-amazon-keyword-optimization",
+    title: "Best AI Tools for Amazon Book Keyword Optimization",
+    description: "Compare AI tools for optimizing Amazon KDP keyword fields and descriptions.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "7 min read",
+    content: "<p>Amazon keyword optimization is part science, part strategy. AI tools have made the science faster.</p>\n<h2>Publisher Rocket</h2>\n<p>No AI replaces Rocket for Amazon-specific data: search volumes, competition scores, estimated earnings.</p>\n<h2>Claude AI</h2>\n<p>Excels at distributing keywords across seven fields. Handles multilingual optimization and verifies character counts.</p>\n<h2>ChatGPT</h2>\n<p>Effective for HTML-formatted descriptions incorporating keywords naturally. Suggests category selections.</p>\n<h2>Keyword Rotation</h2>\n<p>Update anytime. If a keyword generates no impressions after thirty days, swap it. Build a database of proven terms.</p>\n<h2>Ready-to-Use Examples</h2>\n<p>For ten complete examples, category strategies, and worksheets, see <a href=\"https://indiepress.gumroad.com/l/qcjnef\" target=\"_blank\" rel=\"noopener noreferrer\">KDP Keywords Cheat Sheet</a> from IndiePress Toolkit.</p>",
+  },
+
+  {
+    slug: "complete-ai-self-publishing-toolkit-2026",
+    title: "The Complete AI Self-Publishing Toolkit: Everything You Need in 2026",
+    description: "Every tool and system needed for a profitable AI-powered self-publishing business.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>Building a self-publishing business requires systems across five areas: production, optimization, launch, series management, and multilingual expansion.</p>\n<h2>The Five Systems</h2>\n<p>Production workflow turning ideas into books in days. Keyword optimization for discoverability. Launch process generating momentum. Series management preventing errors. Multilingual expansion multiplying revenue.</p>\n<h2>The Cost of Gaps</h2>\n<p>Great production with poor optimization produces invisible books. Perfect keywords without launch strategy means no momentum. English-only leaves eighty percent of revenue untouched.</p>\n<h2>The Integrated Approach</h2>\n<p>Successful publishers follow proven systems producing consistent results rather than reinventing for each book.</p>\n<h2>All Five Systems</h2>\n<p>For 128 pages of guides and templates covering everything, see <a href=\"https://indiepress.gumroad.com/l/svgssf\" target=\"_blank\" rel=\"noopener noreferrer\">The Complete IndiePress Toolkit</a> — five guides bundled at 51% off.</p>",
+  },
+
+  {
+    slug: "how-ai-transforming-self-publishing-workflows",
+    title: "How AI is Transforming Self-Publishing: Tools, Workflows, and Strategies",
+    description: "How AI tools are changing every aspect of self-publishing in 2026.",
+    category: "How-To",
+    categorySlug: "how-to",
+    date: "September 7, 2026",
+    readTime: "8 min read",
+    content: "<p>AI has fundamentally changed what is possible in self-publishing. Tasks taking months now take days. Markets requiring native fluency are accessible through translation. Production bottlenecks have disappeared.</p>\n<h2>Writing at Scale</h2>\n<p>Two to four books per month while maintaining quality. You provide creative direction. AI handles expansion and consistency.</p>\n<h2>Translation Without Borders</h2>\n<p>Every Amazon marketplace is now accessible. A book competing with millions in English competes with dozens in Danish.</p>\n<h2>Metadata and Marketing</h2>\n<p>AI processes keyword data and writes descriptions faster than manual approaches.</p>\n<h2>Cover Generation</h2>\n<p>Midjourney and DALL-E produce photorealistic images matching traditional photography.</p>\n<h2>The Compounding Effect</h2>\n<p>Three books per month in five languages creates fifteen editions monthly or one hundred eighty per year.</p>\n<h2>The Complete System</h2>\n<p>For every workflow needed, see <a href=\"https://indiepress.gumroad.com/l/svgssf\" target=\"_blank\" rel=\"noopener noreferrer\">The Complete IndiePress Toolkit</a> — 128 pages covering production, keywords, launch, series, and multilingual expansion.</p>",
+  },
+
+  {
+    slug: "best-digital-resources-self-publishing-authors-2026",
+    title: "Best Digital Resources for Self-Publishing Authors in 2026",
+    description: "A curated guide to the best guides, templates, and toolkits for self-publishing authors.",
+    category: "Best Of",
+    categorySlug: "best-of",
+    date: "September 7, 2026",
+    readTime: "7 min read",
+    content: "<p>The self-publishing education market is flooded with resources of varying quality. The ones worth paying for are built from real experience with specific, actionable systems.</p>\n<h2>What to Look For</h2>\n<p>Built from real experience with specific numbers. Actionable so you implement today. Specific rather than superficial.</p>\n<h2>Keyword Resources</h2>\n<p>Should show exactly how to fill seven fields with real examples and provide printable worksheets.</p>\n<h2>Production Resources</h2>\n<p>Need specific prompt templates, editing checklists for AI content, and realistic timelines.</p>\n<h2>Launch Resources</h2>\n<p>Should provide step-by-step timelines you can follow as checklists.</p>\n<h2>Series Management</h2>\n<p>A good series bible prevents continuity errors that generate negative reviews.</p>\n<h2>The All-in-One Option</h2>\n<p><a href=\"https://indiepress.gumroad.com/l/svgssf\" target=\"_blank\" rel=\"noopener noreferrer\">The Complete IndiePress Toolkit</a> bundles five specialized guides totaling 128 pages at 51% off individual pricing.</p>",
+  }
 ];
 
 export function getPostsByCategory(categorySlug: string): Post[] {
